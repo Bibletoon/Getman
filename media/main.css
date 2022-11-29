@@ -1,0 +1,37 @@
+body {
+	background-color: transparent;
+}
+
+.styled-input {
+	display: block;
+	flex: 1;
+	width: 100%;
+	color: var(--vscode-input-foreground);
+	background-color: var(--vscode-input-background);
+	border: none;
+	font-family: var(--vscode-font-family);
+    padding: var(--input-padding-vertical) var(--input-padding-horizontal);
+}
+
+textarea { resize: vertical; }
+
+.action-button {
+	display: block;
+	border: none;
+	margin: 0 auto;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.row button:not(:last-child) {
+	margin-right: 0.5em;
+}
+
+#headers > * {
+	margin-block-start: var(--input-margin-vertical);
+	margin-block-end: var(--input-margin-vertical);
+}
