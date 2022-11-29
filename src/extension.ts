@@ -99,7 +99,7 @@ class GetmanViewProvider implements vscode.WebviewViewProvider {
 				<textarea id="body" class="styled-input" placeholder="Body"></textarea>
 				<div id="headers">
 					<label>Headers</label>
-					<input type="text" class="styled-input" disabled id="host" value="Header:<computed on launch>" />
+					<input type="text" class="styled-input" disabled id="host" value="Host:<computed on launch>" />
 					<input type="text" class="styled-input header" placeholder="Header" value="Accept:*/*" />
 					<input type="text" class="styled-input header" placeholder="Header" value="Accept-encoding:gzip,deflate,br" />
 					<input type="text" class="styled-input header" placeholder="Header" value="Connection:keep-alive" />

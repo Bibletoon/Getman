@@ -41,7 +41,7 @@
             header.disabled = true;
             header.classList.add("styled-input");
             header.id = "host";
-            header.value="Header:<computed on launch>";
+            header.value="Host:<computed on launch>";
             const firstHeader = document.querySelector("#headers .header");
             if (firstHeader) {
                 document.querySelector("#headers").insertBefore(header, firstHeader);
