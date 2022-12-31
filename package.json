@@ -2,7 +2,7 @@
   "name": "getman",
   "displayName": "getman",
   "publisher" : "Bibletoon",
-  "image" : "media/icon.png",
+  "icon" : "media/icon.png",
   "repository": "https://github.com/Bibletoon/Getman",
   "description": "Simple extension to fetch web pages",
   "version": "1.0.0",

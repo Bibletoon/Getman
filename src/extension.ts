@@ -134,8 +134,19 @@ class GetmanViewProvider implements vscode.WebviewViewProvider {
 				headers: Object.fromEntries(headers),
 				body: method === "GET" ? null : body,
 			});
-			const document = await vscode.workspace.openTextDocument({ language: 'txt', content: await response.text() });
+			const responseType = response.headers.get("content-type")?.split(";")[0];
+			let language = "txt";
+			if (responseType === "application/json") {
+				language = "json";
+			} else if (responseType === "text/html") {
+				language = "html";
+			}
+
+			const document = await vscode.workspace.openTextDocument({ language, content: await response.text() });
 			await vscode.window.showTextDocument(document, { preview: false });
+			if (language !== "txt") {
+				vscode.commands.executeCommand('editor.action.formatDocument');
+			}
 		} catch (error) {
 			vscode.window.showErrorMessage('Error: ' + error);
 		}
