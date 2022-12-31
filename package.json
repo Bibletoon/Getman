@@ -1,11 +1,11 @@
 {
   "name": "getman",
   "displayName": "getman",
-  "publisher" : "Bibletoon",
-  "icon" : "media/icon.png",
+  "publisher": "Bibletoon",
+  "icon": "media/icon.png",
   "repository": "https://github.com/Bibletoon/Getman",
   "description": "Simple extension to fetch web pages",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "engines": {
     "vscode": "^1.73.0"
   },
